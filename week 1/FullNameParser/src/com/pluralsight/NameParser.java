@@ -17,7 +17,7 @@ public class NameParser {
         int secondSpaceIndex = name.lastIndexOf(" ");
 
     if (name.contains(".")) {
-       middleName = name.substring(spaceIndex,secondSpaceIndex);
+       middleName = name.substring(spaceIndex,secondSpaceIndex-1);
         lastName = name.substring(secondSpaceIndex + 1);
     }
     else {
@@ -27,7 +27,7 @@ public class NameParser {
 
 
         System.out.println("First name: " + firstName);
-        System.out.println("Middle name: " + middleName);
+        System.out.println("Middle name:" + middleName);
         System.out.println("Last name: " + lastName );
 
 

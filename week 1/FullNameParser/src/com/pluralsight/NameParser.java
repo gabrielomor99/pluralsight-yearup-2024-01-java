@@ -8,7 +8,7 @@ public class NameParser {
 
         System.out.println("Please enter your name: ");
 
-        String name = userInput.nextLine();
+        String name = userInput.nextLine().trim();
 
         int spaceIndex = name.indexOf(" ");
         String firstName = name.substring(0,spaceIndex);

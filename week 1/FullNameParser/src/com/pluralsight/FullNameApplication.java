@@ -10,16 +10,16 @@ public class FullNameApplication {
         System.out.println("Please enter your name");
 
         System.out.println("First Name: ");
-        String firstName = userInput.nextLine();
+        String firstName = userInput.nextLine().trim();
 
         System.out.println("Middle name: ");
-        String middleName = userInput.nextLine();
+        String middleName = userInput.nextLine().trim();
 
         System.out.println("Last name: ");
-        String lastName = userInput.nextLine();
+        String lastName = userInput.nextLine().trim();
 
         System.out.println("Suffix: ");
-        String suffix = userInput.nextLine();
+        String suffix = userInput.nextLine().trim();
 
         String name = firstName + middleName + lastName + suffix;
 

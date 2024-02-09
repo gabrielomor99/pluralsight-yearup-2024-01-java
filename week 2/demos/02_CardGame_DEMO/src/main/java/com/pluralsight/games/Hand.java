@@ -4,8 +4,10 @@ import java.util.ArrayList;
 
 public class Hand
 {
-    private ArrayList<Card> cards = new ArrayList<>();
-    private String playerName;
+    private final ArrayList<Card>
+
+            cards = new ArrayList<>();
+    private final String playerName;
 
     public Hand(String playerName)
     {

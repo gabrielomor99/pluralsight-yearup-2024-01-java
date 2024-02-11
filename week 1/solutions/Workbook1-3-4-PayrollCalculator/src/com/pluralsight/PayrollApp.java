@@ -19,14 +19,14 @@ public class PayrollApp
         System.out.println("Payroll Calculator");
         System.out.println();
 
-        System.out.print("Enter your name: ");
+        System.out.print("Enter your name: \n");
         name = userInput.nextLine().strip();
 
         System.out.print("Enter the hours worked: ");
         hours = userInput.nextDouble();
         userInput.nextLine();
 
-        System.out.print("Enter your pay rate: ");
+        System.out.println("Enter your pay rate: ");
         payRate = userInput.nextDouble();
         userInput.nextLine();
 

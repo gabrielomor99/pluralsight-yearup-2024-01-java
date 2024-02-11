@@ -1,32 +1,26 @@
 package com.pluralsight;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 
 public class PayrollCalculator {
+    public static void main(String[] args){
+       Scanner userInput = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        Scanner userInput = new Scanner(System.in);
+       String name;
+       double hoursWorked;
+       double payRate;
 
-        String name;
-        double hoursWorked;
-        double payRate;
-        double grossPay;
-
-        System.out.println("Enter your name");
-        name = userInput.nextLine();
-
-        System.out.println("Enter hours worked");
+        System.out.println("Please enter your name:");
+        name = userInput.nextLine().trim();
+        System.out.println("Please enter your hours worked:");
         hoursWorked = userInput.nextDouble();
-
-        System.out.println("Enter pay rate");
+        System.out.println("Please enter your pay rate:");
         payRate = userInput.nextDouble();
 
-      grossPay = hoursWorked * payRate;
+        double grossPay = hoursWorked * payRate;
 
-        System.out.println();
-        System.out.println(name + " "+"your gross pay is" + " "+ grossPay);
+        System.out.println( name + " your gross pay is " + grossPay);
+
+
     }
-
 }

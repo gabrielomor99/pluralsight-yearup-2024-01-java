@@ -17,7 +17,7 @@ public abstract class Order
         orderId = currentOrderId++;
         this.name = name;
         progress = "ordered";
-        pizzas = new ArrayList<>();
+        this.pizzas = new ArrayList<>();
     }
 
     public int getOrderId()
